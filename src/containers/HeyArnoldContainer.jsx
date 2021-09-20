@@ -14,10 +14,12 @@ const HeyArnoldContainer= () => {
         .finally(() => setLoading(false))
     ), []);
     if (loading) return (
-        <img src="https://wirdd.in/kanye/gifs/head.gif" alt="loading spinner"
+        <img src="https://i.imgur.com/B8SSY5p.gif?noredirect" alt="loading spinner"
         />);
     
     return (
         <CharacterList characters={characters} />
     );
 };
+
+export default HeyArnoldContainer;
