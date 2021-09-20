@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { findCharacters } from '../services/heyArnoldAPI';
 import CharacterList from '../components/characters/CharacterList';
 
