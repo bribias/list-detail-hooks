@@ -4,10 +4,11 @@ import HeyArnoldDetailsContainer from './HeyArnoldDetailsContainer';
 import { MemoryRouter } from 'react-router-dom';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
+import data from '../data/data';
 
 const server = setupServer(
     rest.get('https://hey-arnold-api.herokuapp.com/api/v1/characters/:id', (req, res, ctx) => {
-        return res(ctx.json());
+        return res(ctx.json(data));
     })
 );
 

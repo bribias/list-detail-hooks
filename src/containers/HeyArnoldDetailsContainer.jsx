@@ -23,7 +23,7 @@ const HeyArnoldDetailsContainer = () => {
         <>
             <Character
                 name={character.name}
-                image={image}
+                image={character.image}
             />
             <Link to="/">
                 <button aria-label="home-button">Home</button>
